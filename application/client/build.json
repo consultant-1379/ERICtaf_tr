@@ -1,0 +1,142 @@
+{
+    "parent": "$(parentJson)/app.json",
+    "defaultPhase": "package",
+    "properties": {
+        "package": "tr",
+        "name": "TR",
+        "version": "1.0.0",
+        "deployDate": "Deploy date",
+        "skeleton": "2.1.0",
+        "skeletonType": "app"
+    },
+    "phases": {
+        "code-verify": {
+            "jshint": {
+                "bitwise": true,
+                "camelcase": true,
+                "curly": true,
+                "eqeqeq": true,
+                "es3": false,
+                "forin": true,
+                "freeze": true,
+                "immed": true,
+                "indent": 4,
+                "latedef": "nofunc",
+                "newcap": true,
+                "noarg": true,
+                "noempty": false,
+                "nonbsp": true,
+                "nonew": true,
+                "plusplus": false,
+                "quotmark": "single",
+                "undef": true,
+                "unused": true,
+                "strict": true,
+                "trailing": true,
+                "asi": false,
+                "boss": false,
+                "debug": false,
+                "eqnull": true,
+                "esnext": false,
+                "evil": false,
+                "expr": false,
+                "funcscope": false,
+                "globalstrict": false,
+                "iterator": false,
+                "lastsemic": false,
+                "laxbreak": false,
+                "laxcomma": false,
+                "loopfunc": false,
+                "moz": false,
+                "multistr": false,
+                "notypeof": false,
+                "proto": false,
+                "scripturl": false,
+                "smarttabs": false,
+                "shadow": false,
+                "sub": false,
+                "supernew": false,
+                "validthis": false,
+                "browser": true,
+                "globals": {
+                    "define": true
+                }
+            }
+        },
+        "css-verify": {
+            "execute": {
+                "command": "$(cssverify)",
+                "attributes": [
+                    "--name",
+                    "$(name)",
+                    "src/$(package)/common",
+                    "src/$(package)/ui",
+                    "src/$(package)/TR.less"
+                ]
+            }
+        },
+        "copy-app-info": {
+            "copy": {
+                "from": "src/$(package)/appInfo.json",
+                "to": "$(packageDir)"
+            }
+        },
+        "update-app-info-in-TR": {
+            "execute": {
+                "command": "$(node) build-scripts/updateAppInfo.js",
+                "attributes": [
+                    "$(packageDir)/tr/TR.js",
+                    "$(version)",
+                    "\"$(deployDate)\""
+                ]
+            }
+        },
+        "update-app-info-in-json": {
+            "execute": {
+                "command": "$(node) build-scripts/updateAppInfo.js",
+                "attributes": [
+                    "$(packageDir)/appInfo.json",
+                    "$(version)",
+                    "\"$(deployDate)\""
+                ]
+            }
+        },
+        "extract-manifests": {
+            "execute": {
+                "command": "$(node) build-scripts/extractManifests.js"
+            }
+        },
+        "build-app": {
+            "depends": [
+                "compile",
+                "compress",
+                "copy-app-info",
+                "update-app-info-in-TR",
+                "update-app-info-in-json",
+                "extract-manifests"
+            ]
+        },
+        "package-skip-tests": {
+            "depends": [
+                "clean",
+                "build-app"
+            ]
+        },
+        "package": {
+            "depends": [
+                "clean",
+                "analyze",
+                "test",
+                "build-app"
+            ]
+        }
+    },
+    "dependencies": {
+        "jscore": "1.3.2",
+        "widgets": "1.3.6",
+        "assets": "1.4.0",
+        "container": "1.9.0",
+        "i18n": "2.0.6",
+        "tablelib": "0.4.3"
+    }
+}

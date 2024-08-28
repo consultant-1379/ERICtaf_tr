@@ -1,0 +1,35 @@
+var testStepsHolder = {};
+
+db['test-steps'].find().forEach(function (testStep) {
+    var testSteps = [];
+    if (testStepsHolder.hasOwnProperty(testStep.testwareId)) {
+      testSteps = testStepsHolder[testStep.testwareId];
+    }
+
+    testSteps.push(testStep);
+    testStepsHolder[testStep.testwareId] = testSteps;
+});
+
+//print(JSON.stringify(testStepsHolder));
+
+var foundItems = 0,
+    savedItems = 0/*,
+    items = []*/;
+
+for (var testwareId in testStepsHolder) {
+  if (testStepsHolder.hasOwnProperty(testwareId)) {
+    foundItems += 1;
+    var testwareObj = db['testware'].findOne({"_id": testwareId});
+    if (testwareObj) {
+      var testSteps = testStepsHolder[testwareId];
+      testwareObj.testSteps = testSteps;
+      testwareObj.sharedTestStepsCount = testSteps.length;
+
+      /*items.push(testwareObj);*/
+      db['testware'].save(testwareObj);
+      savedItems += 1;
+    }
+  }
+}
+//print(JSON.stringify(items));
+print('Found items: ' + foundItems + '. Saved items: ' + savedItems);

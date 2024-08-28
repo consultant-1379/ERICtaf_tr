@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.ericsson.oss.pmic</groupId>
+		<artifactId>pm-test</artifactId>
+		<version>1.0.1094</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<artifactId>pmic-test-pom</artifactId>
+	<packaging>pom</packaging>
+	<properties>
+		<taf_testware>true</taf_testware>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.ericsson.oss.pmic</groupId>
+			<artifactId>ERICTAFpmic_CXP9030404</artifactId>
+			<version>${project.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>commons-logging</artifactId>
+					<groupId>commons-logging</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+
+
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>com.ericsson.cifwk.taf</groupId>
+                <artifactId>taf-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+            <plugins>
+                <plugin>
+                <groupId>com.ericsson.cifwk.taf</groupId>
+                <artifactId>taf-allure-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </reporting>
+
+</project>

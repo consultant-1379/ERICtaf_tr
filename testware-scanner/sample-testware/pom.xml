@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.ericsson.cifwk</groupId>
+        <artifactId>tr-testware-scanner</artifactId>
+        <version>1.0.29-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>tr-sample-testware</artifactId>
+    <name>Sample testware</name>
+    <description>Sample testware description</description>
+
+    <organization>
+        <name>Ericsson</name>
+        <url>http://www.ericsson.com</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>evicovc</id>
+            <name>Victor Ovchinnikov</name>
+            <email>victor.ovchinnikov@ericcson.com</email>
+            <organization>Ericsson</organization>
+        </developer>
+        <developer>
+            <id>emihvol</id>
+            <name>Mihails Volkovs</name>
+            <email>mihails.volkovs@ericcson.com</email>
+            <organization>Ericsson</organization>
+        </developer>
+        <developer>
+            <id>enikoal</id>
+            <name>Alexey Nikolaenko</name>
+            <email>alexey.nikolaenko@ericcson.com</email>
+            <organization>Ericsson</organization>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>Jira Issues</system>
+        <url>http://jira-oss.lmera.ericsson.se/browse/CIP</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Jenkins</system>
+        <url>https://jenkins.lmera.ericsson.se/taf_main/view/TR/</url>
+    </ciManagement>
+
+    <scm>
+        <url>https://gerrit.ericsson.se/#/admin/projects/OSS/com.ericsson.cifwk/ERICtaf_tr</url>
+        <connection>ssh://[signum]@gerrit.ericsson.se:29418/OSS/com.ericsson.cifwk/ERICtaf_tr</connection>
+        <developerConnection>ssh://[signum]@gerrit.ericsson.se:29418/OSS/com.ericsson.cifwk/ERICtaf_tr</developerConnection>
+      <tag>HEAD</tag>
+  </scm>
+
+    <mailingLists>
+        <mailingList>
+            <name>TA Framework Team (LMI)</name>
+            <post>PDLTAFRAME@ex1.eemea.ericsson.se</post>
+        </mailingList>
+    </mailingLists>
+
+    <reports />
+
+	<build>
+		<plugins>
+            <plugin>
+				<groupId>com.ericsson.cifwk</groupId>
+				<artifactId>taf-scanner-maven-plugin</artifactId>
+                <version>${project.version}</version>
+                <configuration>
+                    <failBuild>true</failBuild>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>scan</goal>
+                        </goals>
+                    </execution>
+                </executions>
+			</plugin>
+		</plugins>
+	</build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ericsson.cifwk</groupId>
+            <artifactId>taf-core</artifactId>
+            <version>${taf.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -1,0 +1,629 @@
+[
+  {
+    "_id": "id_1",
+    "groupId": "com.ericsson.cifwk",
+    "artifactId": "tm-tests",
+    "version": "1.0.1",
+    "status": "Stable",
+    "javaDocLocation": "http://taftm.lmera.ericsson.se/docs/",
+    "gitLocation": "ssh://gerrit.ericsson.se:29418/OSS/com.ericsson.cifwk/ERICtaf_tm",
+    "pomLocation": "",
+    "owners": [
+      {
+        "id": "eariuid",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml",
+      "suite3.xml"
+    ],
+    "testStepsCount": 0,
+    "testSteps": [
+
+    ],
+    "publishedAt": "Thu Oct 30 10:10:43 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_2",
+    "groupId": "com.ericsson.cifwk",
+    "artifactId": "tm-tests",
+    "version": "1.0.2",
+    "status": "Stable",
+    "javaDocLocation": "http://taftm.lmera.ericsson.se/docs/",
+    "gitLocation": "ssh://gerrit.ericsson.se:29418/OSS/com.ericsson.cifwk/ERICtaf_tm",
+    "pomLocation": "http://www.google.ie",
+    "owners": [
+      {
+        "id": "eariuid",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml"
+    ],
+    "testStepsCount": 0,
+    "testSteps": [
+
+    ],
+    "publishedAt": "Thu Oct 30 10:15:43 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_3",
+    "groupId": "com.ericsson.cifwk",
+    "artifactId": "tm-tests",
+    "version": "1.0.3",
+    "status": "Stable",
+    "javaDocLocation": "http://taftm.lmera.ericsson.se/docs/",
+    "gitLocation": "ssh://gerrit.ericsson.se:29418/OSS/com.ericsson.cifwk/ERICtaf_tm",
+    "pomLocation": "http://www.google.ie",
+    "owners": [
+      {
+        "id": "eariuid",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml",
+      "suite2.xml",
+      "suite3.xml",
+      "suite4.xml"
+    ],
+    "testStepsCount": 0,
+    "testSteps": [
+
+    ],
+    "publishedAt": "Thu Oct 30 10:43:43 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_4",
+    "groupId": "com.ericsson.cifwk",
+    "artifactId": "tm-tests",
+    "version": "1.0.5",
+    "status": "Not stable",
+    "javaDocLocation": "http://taftm.lmera.ericsson.se/docs/",
+    "gitLocation": "",
+    "pomLocation": "http://www.google.ie",
+    "owners": [
+      {
+        "id": "eariuid",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml",
+      "suite3.xml"
+    ],
+    "testStepsCount": 0,
+    "testSteps": [
+
+    ],
+    "publishedAt": "Thu Oct 30 11:12:43 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_5",
+    "groupId": "com.ericsson.cifwk",
+    "artifactId": "tm-tests",
+    "version": "1.1.1",
+    "status": "Stable",
+    "javaDocLocation": "http://taftm.lmera.ericsson.se/docs/",
+    "gitLocation": "ssh://gerrit.ericsson.se:29418/OSS/com.ericsson.cifwk/ERICtaf_tm",
+    "pomLocation": "http://www.google.ie",
+    "owners": [
+      {
+        "id": "eariid1",
+        "name": "Owner Name 1",
+        "email": "owner1@ericsson.com",
+        "organization": "Ericsson"
+      },
+      {
+        "id": "eariid2",
+        "name": "Owner Name 2",
+        "email": "owner2@ericsson.com",
+        "organization": "Ericsson"
+      },
+      {
+        "id": "eariid3",
+        "name": "Owner Name 3",
+        "email": "owner3@ericsson.com",
+        "organization": "Ericsson"
+      },
+      {
+        "id": "ejhnhng",
+        "name": "Owner Name 4",
+        "email": "owner4@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml",
+      "suite2.xml",
+      "suite3.xml",
+      "suite4.xml"
+    ],
+    "testStepsCount": 13,
+    "testSteps": [
+      {
+        "id": "ts_5_1",
+        "testwareId": "id_5",
+        "name": "Upload Mind Map",
+        "description": "Upload Mind Map via REST/UI. Returns ImportResult.",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.RestLoginTestSteps",
+        "returnType": "void",
+        "attributes": [
+          {
+            "name": "Return Value 111",
+            "type": "Return Type 111"
+          },
+          {
+            "name": "Return Value 112",
+            "type": "Return Type 112"
+          },
+          {
+            "name": "Return Value 113",
+            "type": "Return Type 113"
+          }
+        ]
+      },
+      {
+        "id": "ts_5_2",
+        "testwareId": "id_5",
+        "name": "Get Test Cases By Search",
+        "description": "Gets Test Cases By Search parameters via REST/UI",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.RestLoginTestSteps",
+        "returnType": "java.lang.String",
+        "attributes": [
+          {
+            "name": "Return Value 121",
+            "type": "Return Type 121"
+          },
+          {
+            "name": "Return Value 122",
+            "type": "Return Type 122"
+          },
+          {
+            "name": "Return Value 123",
+            "type": "Return Type 123"
+          },
+          {
+            "name": "Return Value 124",
+            "type": "Return Type 124"
+          },
+          {
+            "name": "Return Value 125",
+            "type": "Return Type 125"
+          },
+          {
+            "name": "Return Value 126",
+            "type": "Return Type 126"
+          },
+          {
+            "name": "Return Value 127",
+            "type": "Return Type 127"
+          },
+          {
+            "name": "Return Value 128",
+            "type": "Return Type 128"
+          },
+          {
+            "name": "Return Value 129",
+            "type": "Return Type 129"
+          },
+          {
+            "name": "Return Value 130",
+            "type": "Return Type 130"
+          },
+          {
+            "name": "Return Value 131",
+            "type": "Return Type 131"
+          }
+        ]
+      },
+      {
+        "id": "ts_5_3",
+        "name": "Create Test Case",
+        "description": "Creates a new Test Case in the TMS",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiLoginTestSteps",
+        "returnType": "int",
+        "attributes": []
+      },
+      {
+        "id": "ts_5_4",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.CliLoginTestSteps",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_5_5",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginTestSteps",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_5_6",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginTestSteps",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_5_7",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginTestSteps",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_5_8",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginTestSteps",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_5_9",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginTestSteps",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_5_10",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginTestSteps",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_5_11",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginTestSteps",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_5_12",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginTestSteps",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_5_13",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginTestSteps",
+        "returnType": "void",
+        "attributes": []
+      }
+    ],
+    "ownerEmail": "owner@ericsson.com",
+    "publishedAt": "Thu Oct 30 13:24:43 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_6",
+    "groupId": "com.ericsson.cifwk",
+    "artifactId": "tr-tests",
+    "version": "1.0.2",
+    "status": "Stable",
+    "javaDocLocation": "",
+    "gitLocation": "ssh://gerrit.ericsson.se:29418/OSS/com.ericsson.cifwk/ERICtaf_tr",
+    "pomLocation": "http://www.google.ie",
+    "owners": [
+      {
+        "id": "ejhnhng",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml",
+      "suite2.xml",
+      "suite3.xml",
+      "suite4.xml"
+    ],
+    "testStepsCount": 1,
+    "testSteps": [
+      {
+        "id": "ts_5_4",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.CliLoginTestSteps",
+        "returnType": "void",
+        "attributes": []
+      }
+    ],
+    "publishedAt": "Thu Oct 30 13:50:43 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_7",
+    "groupId": "com.ericsson.cifwk",
+    "artifactId": "tr-tests",
+    "version": "1.1.5",
+    "status": "Stable",
+    "javaDocLocation": "",
+    "gitLocation": "",
+    "pomLocation": "",
+    "owners": [
+      {
+        "id": "eariuid",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml",
+      "suite2.xml"
+    ],
+    "testStepsCount": 1,
+    "testSteps": [
+      {
+        "id": "ts_7_1",
+        "name": "Create Test Case with ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.RestLoginTestSteps",
+        "returnType": "void",
+        "attributes": [
+          {
+            "name": "Return Value 7_21_1",
+            "type": "Return Type 7_21_1"
+          }
+        ]
+      }
+    ],
+    "publishedAt": "Thu Oct 30 14:10:43 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_8",
+    "groupId": "com.ericsson.cifwk.1",
+    "artifactId": "tr-tests-1",
+    "version": "0.0.1",
+    "status": "Stable",
+    "javaDocLocation": "",
+    "gitLocation": "",
+    "pomLocation": "",
+    "owners": [
+      {
+        "id": "eariuid",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml",
+      "suite2.xml",
+      "suite3.xml",
+      "suite4.xml"
+    ],
+    "testStepsCount": 1,
+    "testSteps": [
+      {
+        "id": "ts_8_1",
+        "name": "Create Test Case with any ID",
+        "description": "Creates a new Test Case with ID given from Eclipse plugin",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.AnyTestSteps",
+        "returnType": "void",
+        "attributes": []
+      }
+    ],
+    "publishedAt": "Thu Oct 30 14:10:44 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_9",
+    "groupId": "com.ericsson.cifwk.2",
+    "artifactId": "tr-tests-2",
+    "version": "0.0.1",
+    "status": "Stable",
+    "javaDocLocation": "",
+    "gitLocation": "",
+    "pomLocation": "",
+    "owners": [
+      {
+        "id": "eariuid",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml",
+      "suite2.xml",
+      "suite3.xml",
+      "suite4.xml"
+    ],
+    "testStepsCount": 0,
+    "testSteps": [
+
+    ],
+    "publishedAt": "Thu Oct 30 14:10:45 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_10",
+    "groupId": "com.ericsson.cifwk.3",
+    "artifactId": "tr-tests-3",
+    "version": "0.0.1",
+    "status": "Stable",
+    "javaDocLocation": "",
+    "gitLocation": "",
+    "pomLocation": "",
+    "owners": [
+      {
+        "id": "eariuid",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml",
+      "suite2.xml",
+      "suite3.xml",
+      "suite4.xml"
+    ],
+    "testStepsCount": 0,
+    "testSteps": [
+
+    ],
+    "publishedAt": "Thu Oct 30 14:10:46 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_11",
+    "groupId": "com.ericsson.cifwk.4",
+    "artifactId": "tr-tests-4",
+    "version": "0.0.1",
+    "status": "Stable",
+    "javaDocLocation": "",
+    "gitLocation": "",
+    "pomLocation": "",
+    "owners": [
+      {
+        "id": "eariuid",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml",
+      "suite2.xml",
+      "suite3.xml",
+      "suite4.xml"
+    ],
+    "testStepsCount": 0,
+    "testSteps": [
+
+    ],
+    "publishedAt": "Thu Oct 30 14:10:47 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_12",
+    "groupId": "com.ericsson.cifwk.5",
+    "artifactId": "tr-tests-5",
+    "version": "0.0.1",
+    "status": "Stable",
+    "javaDocLocation": "",
+    "gitLocation": "",
+    "pomLocation": "",
+    "owners": [
+      {
+        "id": "eariuid",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "suite1.xml",
+      "suite2.xml"
+    ],
+    "testStepsCount": 0,
+    "testSteps": [
+
+    ],
+    "publishedAt": "Thu Oct 30 14:10:48 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_13",
+    "groupId": "com.ericsson.cifwk.6",
+    "artifactId": "tr-tests-6",
+    "version": "0.0.1",
+    "status": "Stable",
+    "javaDocLocation": "",
+    "gitLocation": "",
+    "pomLocation": "",
+    "owners": [
+      {
+        "id": "egergle",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "aTestSuite.xml",
+      "suite2.xml"
+    ],
+    "testStepsCount": 0,
+    "testSteps": [
+
+    ],
+    "publishedAt": "Thu Oct 30 14:10:49 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_14",
+    "groupId": "com.ericsson.cifwk.7",
+    "artifactId": "tr-tests-7",
+    "version": "0.0.1",
+    "status": "Stable",
+    "javaDocLocation": "",
+    "gitLocation": "",
+    "pomLocation": "",
+    "owners": [
+      {
+        "id": "egergle",
+        "name": "Owner Name",
+        "email": "owner@ericsson.com",
+        "organization": "Ericsson"
+      }
+    ],
+    "suites": [
+      "anotherTestSuite.xml",
+      "suite2.xml"
+    ],
+    "testStepsCount": 0,
+    "testSteps": [
+
+    ],
+    "publishedAt": "Thu Oct 30 14:10:50 EET 2014",
+    "description": "Description for tm-tests testware."
+  },
+  {
+    "_id": "id_15",
+    "groupId": "com.ericsson.cifwk.7",
+    "artifactId": "tr-tests-7",
+    "version": "0.0.2",
+    "status": null,
+    "javaDocLocation": null,
+    "gitLocation": null,
+    "pomLocation": null,
+    "testStepsCount": 0,
+    "owners": [],
+    "publishedAt": "Thu Oct 30 14:10:50 EET 2014",
+    "description": null
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "_id": "id_1",
+    "name": "com.ericsson.cifwk.tm.fun.login.operator.RestLoginOperator",
+    "gav": {
+      "groupId": "com.ericsson.cifwk",
+      "artifactId": "tms-server",
+      "version": "1.0.20"
+    },
+    "context": ["REST", "CLI"],
+    "publicMethodsCount": 2,
+    "publicMethods": [
+      {
+        "id": "ts_1_1",
+        "name": "uploadMindMap",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.RestLoginOperator",
+        "returnType": "void",
+        "attributes": [
+          {
+            "name": "Return Value 111",
+            "type": "Return Type 111"
+          },
+          {
+            "name": "Return Value 112",
+            "type": "Return Type 112"
+          },
+          {
+            "name": "Return Value 113",
+            "type": "Return Type 113"
+          }
+        ]
+      },
+      {
+        "id": "ts_1_2",
+        "name": "getTestCasesBySearch",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.RestLoginOperator",
+        "returnType": "java.lang.String",
+        "attributes": [
+          {
+            "name": "Return Value 121",
+            "type": "Return Type 121"
+          },
+          {
+            "name": "Return Value 122",
+            "type": "Return Type 122"
+          },
+          {
+            "name": "Return Value 123",
+            "type": "Return Type 123"
+          },
+          {
+            "name": "Return Value 124",
+            "type": "Return Type 124"
+          },
+          {
+            "name": "Return Value 125",
+            "type": "Return Type 125"
+          },
+          {
+            "name": "Return Value 126",
+            "type": "Return Type 126"
+          },
+          {
+            "name": "Return Value 127",
+            "type": "Return Type 127"
+          },
+          {
+            "name": "Return Value 128",
+            "type": "Return Type 128"
+          },
+          {
+            "name": "Return Value 129",
+            "type": "Return Type 129"
+          },
+          {
+            "name": "Return Value 130",
+            "type": "Return Type 130"
+          },
+          {
+            "name": "Return Value 131",
+            "type": "Return Type 131"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "id_2",
+    "name": "com.ericsson.cifwk.tm.fun.login.operator.UiLoginOperator",
+    "gav": {
+      "groupId": "com.ericsson.cifwk",
+      "artifactId": "tms-client",
+      "version": "1.0.20"
+    },
+    "shared": true,
+    "context": ["UI", "API", "REST"],
+    "publicMethodsCount": 1,
+    "publicMethods": [
+      {
+        "id": "ts_2_1",
+        "name": "createTestCase",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiLoginOperator",
+        "returnType": "int",
+        "attributes": []
+      }
+    ]
+  },
+  {
+    "_id": "id_3",
+    "name": "com.ericsson.cifwk.tm.fun.login.operator.CliLoginOperator",
+    "gav": {
+      "groupId": "com.ericsson.cifwk",
+      "artifactId": "tms-client",
+      "version": "1.0.20"
+    },
+    "shared": true,
+    "context": ["CLI"],
+    "publicMethodsCount": 1,
+    "publicMethods": [
+      {
+        "id": "ts_3_1",
+        "name": "createTestCaseWithID0",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.CliLoginOperator",
+        "returnType": "void",
+        "attributes": []
+      }
+    ]
+  },
+  {
+    "_id": "id_4",
+    "name": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginOperator",
+    "gav": {
+      "groupId": "com.ericsson.cifwk",
+      "artifactId": "tms-client",
+      "version": "1.0.20"
+    },
+    "shared": true,
+    "context": ["CLI", "UI"],
+    "publicMethodsCount": 9,
+    "publicMethods": [
+      {
+        "id": "ts_4_1",
+        "name": "createTestCaseWithID1",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginOperator",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_4_2",
+        "name": "createTestCaseWithI2",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginOperator",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_4_3",
+        "name": "createTestCaseWithI3",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginOperator",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_4_4",
+        "name": "createTestCaseWithI4",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginOperator",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_4_5",
+        "name": "createTestCaseWithI5",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginOperator",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_4_6",
+        "name": "createTestCaseWithI6",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginOperator",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_4_7",
+        "name": "createTestCaseWithID7",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginOperator",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_4_8",
+        "name": "createTestCaseWithID8",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginOperator",
+        "returnType": "void",
+        "attributes": []
+      },
+      {
+        "id": "ts_4_9",
+        "name": "createTestCaseWithID9",
+        "component": "com.ericsson.cifwk.tm.fun.login.operator.UiCliLoginOperator",
+        "returnType": "void",
+        "attributes": []
+      }
+    ]
+  }
+
+]

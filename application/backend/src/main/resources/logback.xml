@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>%d{dd MMM HH:mm:ss} %-4level %-7X{username} %-15logger{15} - %msg %n</Pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.ericsson" level="info"/>
+
+    <root level="warn">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>

@@ -1,0 +1,10 @@
+<div class="eaTR-Owners">
+    {{#if template.owners}}
+    {{#each template.owners}}
+    {{#if first}}<span></span>{{else}}<span class="eaTR-Owners-comma">,&nbsp;</span>{{/if}}
+    <span class="eaTR-Owners-item" title="{{name}}">{{#if id}}<a href="mailto:{{email}}" target="_top">{{id}}</a>{{else}}{{name}}{{/if}}</span>
+    {{/each}}
+    {{else}}
+    <span class="eaTR-Owners-message">{{template.noOwnersMessage}}</span>
+    {{/if}}
+</div>

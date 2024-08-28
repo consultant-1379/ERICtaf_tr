@@ -1,0 +1,55 @@
+.eaTR-TestwaresMainRegion {
+    &-panesHolder {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-pane {
+        position: absolute;
+        width: 0;
+        left: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background: #fff;
+        z-index: 1;
+        transition-property: width, left;
+        transition-duration: 0.4s;
+        padding: 0 2%;
+        box-sizing: border-box;
+        min-width: 45%;
+
+        &_show {
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+    &-paneOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: none;
+
+        &_showProgress {
+            display: block;
+        }
+        &_show {
+            display: block;
+
+            &:hover {
+                background: #f4f4f4;
+                opacity: 0.4;
+                cursor: pointer;
+            }
+        }
+    }
+}

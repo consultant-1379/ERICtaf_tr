@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.ericsson.cifwk</groupId>
+        <artifactId>ERICtaf_tr</artifactId>
+        <version>1.0.29-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>tr-application</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>model</module>
+        <module>backend</module>
+        <module>client</module>
+    </modules>
+
+    <properties>
+        <server.id />
+        <upload.cmd />
+        <webapp.dir />
+        <tomcat.cmd />
+        <sudoPwd /> <!-- passed by mvn -DsudoPwd=pwd-->
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>prod</id>
+            <activation>
+                <property>
+                    <name>env</name>
+                    <value>prod</value>
+                </property>
+            </activation>
+            <properties>
+                <server.id>eselivm2v637l.lmera.ericsson.se</server.id>
+                <upload.cmd>scp://eselivm2v637l.lmera.ericsson.se</upload.cmd>
+                <!--<server.id>prod</server.id>-->
+                <!--<upload.cmd>scp://localhost:7722</upload.cmd>-->
+                <webapp.dir>/proj/PDU_OSS_CI_TAF/taf-registry/webapps</webapp.dir>
+                <tomcat.cmd>echo ${sudoPwd} | sudo -S /etc/init.d/ITTE-apache-tomcat</tomcat.cmd>
+            </properties>
+        </profile>
+    </profiles>
+
+</project>

@@ -1,0 +1,80 @@
+.eaTR {
+    height: 100%;
+
+    &-Content {
+        position: relative;
+        width: 100%;
+        height: ~"calc(100% - 50px)";
+        overflow: hidden;
+
+        &-page {
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            opacity: 0;
+
+            transition: all 0.5s line-in;
+
+            &_show_true {
+                position: relative;
+                display: block;
+                z-index: 1;
+                opacity: 1;
+            }
+        }
+    }
+
+    &-Navigation {
+        float: left;
+        margin-top: 1.2rem;
+        margin-bottom: 1.8rem;
+    }
+
+    &-Version {
+        float: right;
+        margin-top: 1.2rem;
+    }
+}
+
+.eaTR-DefaultBar {
+    position: relative;
+    padding-left: 0.4rem;
+    margin-bottom: 1.4rem;
+
+    &-actions {
+        display: inline-block;
+        width: ~"calc(100% - 180px)";
+    }
+    &-quickSearch {
+        display: inline-block;
+
+        &_hidden {
+            display: none;
+        }
+    }
+    &-searchInput {
+        margin-right: 0.6rem;
+    }
+    &-searchClearIcon {
+        position: absolute;
+        left: 165px;
+        top: 12px;
+    }
+    &-searchButton {
+        margin: 0.4rem 0.6rem;
+    }
+
+    &-advancedSearchButton, &-closeSearchButton {
+        margin-right: 0.6rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
+
+        &_hidden {
+            display: none;
+        }
+    }
+}

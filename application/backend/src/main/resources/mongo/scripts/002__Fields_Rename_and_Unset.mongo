@@ -1,0 +1,13 @@
+db.testware.update({}, {
+  $unset: {"totalTestStepsCount": undefined, "sharedTestStepsCount": undefined},
+  $set: {"testStepsCount": 0}
+});
+
+db.imports.update({}, {
+  $unset: {"testSteps": undefined}
+});
+
+db.testware.find({ "testSteps": { $not: {$size: 0} }, $and: [ { "testSteps": { $exists: true } } ] }).forEach(function (tw) {
+  tw.testStepsCount = tw.testSteps.length;
+  db.testware.save(tw);
+});
